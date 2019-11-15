@@ -1,0 +1,850 @@
+html, body {
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/font.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+    text-align: center;
+
+}
+
+.text-header {
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    width: auto;
+    padding: 4%;
+    transform: translateY(50%);
+    display: inline-block;
+
+}
+
+.main {
+    position: relative;
+    top: 65%;
+    background-color: white;
+
+
+}
+
+.mon-contenu {
+    min-height: 100%;
+    padding: 5% 1% 5% 1%;
+}
+.wrapper {
+    width: 100%;
+    padding: 64px 1%;
+}
+
+.wrapper a {
+    color: #dc3545;
+}
+.wrapper a:hover {
+    color: #dc3545;
+    text-decoration: underline;
+}
+
+/***********************************************************************************/
+/**                            text du header
+**
+**/
+
+
+/***********************************************************************************/
+/**                            ma bavbar
+**
+**/
+
+nav{
+    width: 100%;
+    background-color: white;
+    min-height: 56px;
+    padding: 0 5%;
+}
+nav ul{
+    display: flex;
+    float: right;
+
+}
+
+
+nav ul li {
+
+    list-style: none;
+
+
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #0D1E4C;
+    padding: 1em;
+
+}
+
+
+.button{
+    width: 68px;
+    height: auto;
+    display: none;
+}
+
+.button img{
+    width: 68px;
+    height: auto;
+    display: none;
+}
+
+
+.button2{
+    margin: auto 0;
+    width: auto;
+    height: 56px;
+}
+
+.button2 img{
+    margin: auto 0;
+    width: auto;
+    height: 56px;
+
+}
+
+
+
+nav ul li a:hover {
+    color: #383333;
+    border-bottom: 3px solid #383333;
+    /* border-top: 3px solid #383333;*/
+    text-decoration: none;
+}
+
+.fixNavigation {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    /* Mise en forme */
+    width: 100%; /* <-- Largeur de votre site */
+}
+
+
+/*******************************************************************************/
+/**
+**                            A Propos
+**
+**/
+
+/* Create three equal columns that floats next to each other */
+
+.propos {
+    background-color: #383333;
+    padding-left: 5%;
+    color: white;
+}
+
+
+
+.my-row {
+    clear: both;
+    height: auto;
+
+}
+
+.my-row:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+[class*="ma-col-"] {
+    float: left;
+}
+
+[class*="ma-col-"]:first-child {
+    margin-left: 0;
+}
+
+.ma-col-2 {
+    width: 50%;
+}
+
+.ma-col-3 {
+    padding-left: 8px;
+    width: 33.33%;
+}
+
+.ma-col-spe-1 {
+    width: 20%;
+}
+
+.ma-col-spe-2 {
+    width: 80%;
+}
+
+.ma-col-spe-3 {
+    width: auto;
+}
+
+
+.mon-cv {
+    background-color: white;
+    color: white;
+    padding: 10px 20px;
+    border: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    margin: 3% auto;
+
+}
+
+.mon-cv a {
+    color: #383333;
+}
+
+.mon-cv a:hover {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.ma-photo img {
+    display: block;
+    max-width: 50%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+**
+**           Parcours
+**
+**/
+
+.parcours {
+    background-color: #f3f0f0;
+
+}
+
+.parcours h1 {
+    color: #383333;
+    text-align: center;
+    padding-bottom: 4%;
+
+}
+
+
+.la-date-parcours {
+
+    display: block;
+    background-color: #383333;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    color: white;
+    text-align: center;
+    line-height: 160px;
+    margin: auto;
+
+
+}
+
+.la-date-experiences {
+
+    display: block;
+    background-color: #f3f0f0;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    color: #383333;
+    text-align: center;
+    line-height: 160px;
+    margin: auto;
+
+
+}
+
+.border-right-parcours {
+    border-right: 2px solid #383333;
+    padding-bottom: 2%;
+}
+
+.border-right-experiences {
+    border-right: 2px solid #f3f0f0;
+    padding-bottom: 2%;
+}
+
+.la-bulle-parcours {
+
+    width: 100%;
+    border: solid;
+    background-color: #383333;
+    border-color: #383333;
+    border-radius: 10px;
+    padding: 1% 2%;
+    color: #f3f0f0;
+
+}
+
+.la-bulle-experiences {
+
+    width: 100%;
+    border: solid;
+    background-color: #f3f0f0;
+    border-color: #f3f0f0;
+    border-radius: 10px;
+    padding: 1% 2%;
+    color: #383333;
+
+}
+
+
+/*************************************************************************************/
+/**                      expÃ©riances
+**
+*/
+
+.experiences {
+    background-color: #383333;
+}
+
+.experiences h1 {
+    text-align: center;
+    padding-bottom: 4%;
+    color: #f3f0f0;
+}
+
+
+/*************************************************************************************/
+/**                       compÃ©tances
+**
+*/
+.mes-competences {
+    padding: 20% 2% 10% 20%;
+    min-height: 70px;
+}
+
+.mes-competences h1 {
+    padding: 60px 0 2% 0;
+    color: #383333;
+}
+
+.mes-outils {
+    background-color: #f3f0f0;
+    color: #383333;
+    padding: 20% 2% 40% 2%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.flex-container > div {
+    background-color: #383333;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border: 10px solid #383333;
+    font-size: 20px;
+
+}
+
+
+/*************************************************************************************/
+/**                      portfolio
+**
+*/
+.mon-portfolio {
+    background-color: #383333;
+
+}
+
+.mon-titre {
+    color: white;
+    text-align: center;
+}
+
+
+.flex-container-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0% 10%;
+
+
+}
+
+.flex-container-portfolio > div {
+    width: auto;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* test overlay card */
+.conteneur {
+    position: relative;
+    width: 50%;
+}
+
+.conteneur img {
+    width: 250px;
+    height: 300px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: #474d5d;
+}
+
+.conteneur:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/******************************************************/
+/**              contact
+**
+*/
+.contact {
+    background-color: #1e211f;
+    min-height: 50%;
+    color: white;
+
+}
+
+.contact h1 {
+    min-height: 50%;
+    text-align: center;
+
+}
+
+.centre-maps {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sous-titre5 {
+
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
+.reseaux
+{
+    margin: 56px auto;
+    width: 56px;
+    height: auto;
+    cursor: pointer;
+}
+
+.reseaux img
+{
+    width: 56px;
+    height: auto;
+
+}
+
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    padding-bottom: 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+}
+
+input[type=submit]:hover {
+    display: block;
+    background-color: #0D1E4C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.mon-hidden {
+    display: none;
+}
+
+.mon-email {
+    padding-bottom: 20px;
+}
+
+
+.mon-email a {
+    text-decoration: none;
+    color: #dc3545;
+
+}
+
+.mon-email a:hover {
+    text-decoration: underline;
+    color: #dc3545;
+
+}
+
+/**************************************************************/
+/**                    modale
+**
+*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 3%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1% 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    margin: 5% auto;
+    color: #dc3545;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #383333;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.modal-header {
+    padding: 2px 16px;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-title {
+    background-color: #f3f3f3;
+    margin-bottom: 2%;
+    padding: 2% 2%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-photo img {
+    padding: 1%;
+    width: 100%;
+
+}
+
+.modal-footer {
+    width: 100%;
+    text-align: center;
+}
+
+
+/*************************************************************************************/
+/**                      footer
+**
+*/
+
+.mentions {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 4px;
+    background-color: #383333;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+
+/******************************************************/
+/***    triangle          ****/
+
+.triangle-parcours {
+
+    border-right: solid 15px #383333;
+    border-bottom: solid 15px transparent;
+    border-top: solid 20px transparent;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.triangle-experiences {
+
+    border-right: solid 15px #f3f0f0;
+    border-bottom: solid 15px transparent;
+    border-top: solid 20px transparent;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 970px) {
+    /* For mobile tablette: */
+    [class*="ma-col-"] {
+        border-right: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header
+    {
+        background-position-x: 50%;
+    }
+
+
+    .main {
+        position: relative;
+        top: 60%;
+        background-color: white;
+
+
+    }
+    .text-header
+    {
+        transform: translateY(10%);
+    }
+
+    nav{
+        width: 100%;
+        padding: 1%;
+        text-align: left;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        float: none;
+        flex-direction: column;
+    }
+
+
+    nav ul li {
+        margin-right: 2px;
+        list-style: none;
+
+
+    }
+
+    #myLinks
+    {
+        display: none;
+    }
+
+
+    .button{
+        /*makes the button visible*/
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        /*since we are here, we can style it a little bit!*/
+        padding: 2%;
+        font-size: 3vh;
+        border: none;
+
+        /*outline none removes the default blue border that appears anytime you click on the button*/
+        outline: none;
+
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    .button2{
+        width: auto;
+        height: 56px;
+        display: none;
+    }
+
+    .button2 img{
+        width: auto;
+        height: 56px;
+        display: none;
+    }
+
+    /* For mobile tablette: */
+    [class*="ma-col-"] {
+        width: 100%;
+        border-right: none;
+        padding-bottom: 4%;
+    }
+
+
+    .triangle-parcours {
+        border-right: solid 15px transparent;
+        border-left: solid 15px transparent;
+        border-top: solid 20px #383333;
+        width: 0;
+        height: 0;
+
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+
+    .triangle-experiences {
+        border-right: solid 15px transparent;
+        border-left: solid 15px transparent;
+        border-top: solid 20px #f3f0f0;
+        width: 0;
+        height: 0;
+
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+    .flex-container-portfolio {
+        padding: 0 10%;
+    }
+
+    .mes-competences {
+        padding: 10% 2% 8% 2%;
+    }
+    .mes-competences h2 {
+        padding: 70px 0 2% 0;
+        color: #383333;
+    }
+
+    .modal {
+
+        padding-top: 0;
+
+    }
+
+    .modal-content {
+
+        width: 100%;
+        min-height: 100%;
+
+    }
+}
+
+
+
+
